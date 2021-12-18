@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Веб-технологии</title>
+    <style>
+
+.container {  
+  border: 5px solid #885731;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  padding: 10px;
+  border: 2px solid #885731;
+  flex: 1 1 500px;
+}
+.divborder{ 
+            width: 255px; height: 490px;
+            box-shadow: 0 0 5px 2px #b47240;
+            margin-bottom: 10px;  
+            margin: auto;
+            border-radius: 70px;
+        }
+        .divnew{
+            width: 150px; height: 25px;
+            border: 2px solid #885731;
+            background-color: orange;
+            margin-bottom: 15px; 
+            border-radius: 30px;
+        }
+        header, footer{
+        text-align: left;
+        height: 50px;
+        padding: 0;
+        margin: 0px;
+        background-color: orange;
+        }
+        .p1{
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        }
+        .flex-row-div{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .margint{
+            margin: auto;
+            width: 150px; height: 25px;
+            margin-bottom: 10px;
+        }
+        .hidden{
+            display: none;
+        }
+        .visable{
+            display: block;
+        }
+        body
+  {  
+    font-family: 'EB Garamond'; 
+    margin: 0px;
+  }
+ ul{
+     list-style-type: circle;
+ }
+  .menuElement{
+      margin-left: 30px;
+      border-left: 2px solid black;
+  }
+  header
+{
+   text-align: right;
+   background-image: url(../gif/aesthetic\ wallpaper\ on\ PC\ 1920х1080.jpg);
+   height: 350px;
+   background-repeat: no-repeat;
+   background-position: left;
+   background-attachment: fixed;
+   background-size: cover;
+   padding-right: 150px;
+   padding-top: 200px;
+   margin: 0px;
+}
+.header-title{
+    padding-right: 25px;
+}
+    </style>
+    <nav class="background-color-dark">
+        <ul class="flex-menu">
+            <li class="HLogo">
+                    <a href="index.html"><img src="../gif/im1.jpg"width="90px"  alt=""></a>
+            </li>
+            <li class="menuElement LiElement">
+                <a href="main.html">О себе</a>
+            </li>
+            <li class="menuElement LiElement">
+                <a href="rezume.html">Резюме</a>
+            </li>
+            <li class="menuElement LiElement">
+                <a href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="menuElement LiElement">
+                <a href="competencii.html">Компетенции</a>
+            </li>
+            <li class="menuElement LiElement">
+                <a href="contact.html">Контакты</a>
+            </li>
+            <li class="menuElement LiElement">
+                <a href="zadaniejs.html">Задание Джава</a>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        function f(a){
+            document.images[1].src = document.images[a].src;
+        }  </script>
+    <header>
+        <h1>Веб - технологии</h1>
+        <h3 class="header-title">Университет "Дубна"</h3>
+    </header>
+</head>
+<body>
+    <main>
+    <div class="container" id="container">
+        <div class="item">
+                <div>
+                    <img src="../примеры/gif/Yellow Polka Dot Wallpaper Mural _ MuralsWallpaper.jpg" width="400px">
+                </div>
+                <div class=" flex-row-div">
+                    <div>
+                        <img src="./gif/gif1.jpg" width="132px" onclick = f(1) ></a>
+                    </div>
+                    <div>
+                        <img src="./gif/gif2.jpg" width="132px" onclick = f(2) ></a>
+                    </div>
+                    <div>
+                        <img src="./gif/gif3.jpg" width="132px" onclick = f(3) ></a>
+                    </div> 
+                </div>
+        </div>
+        <div class="item">
+            <textarea id = "textArea"></textarea>>
+            <button>Button</button>
+            <p id="values"></p></div>
+        <div class="item">Gumbo beet greens</div>
+        <div class="item">corn soko</div>
+        <div class="item">endive gumbo gourd</div>
+        <div class="item"><form action="javascript:f()" method="get" name = "ex_form" id="render_ex_form">
+            <div class="divborder p1" >
+                <div>
+                    <div>Как Вам удобно получить ответ:</div>
+                    <label for="c_mail"><input type="radio" name="com_tion" id="c_mail" onclick = f1()> по почте </label><br>
+                    <label for="c_tel"><input type="radio" name="com_tion" id="c_tel" onclick = f1()> по телефону</label><br>
+                    <label for="c_none"><input type="radio" name="com_tion" id="c_none" onclick = f1() checked> не нужно отвечать</label><br>
+                </div>
+                <div>
+                    <label for="theme">
+                    Укажите тему вопроса
+                    </label><br>
+                    <select name="theme" id="theme" class="divnew">
+                        <option value="work">работа</option>
+                        <option value="cooperation">сотрудничество</option>
+                        <option value="personal">личное</option>
+                    </select>
+                </div>                
+                <div>
+                    <div class="flex-row-div">
+                        <label for="example">Ваше имя</label>
+                        <input  class="divnew" type="text"name="example"id="example"size="30"pattern="[A-Z]+"required>
+                    </div>
+                    <div class="flex-row-div hidden" id="email">
+                        <label for="email">Адрес почты</label>
+                        <input  class="divnew" type="email" name="email" >
+                    </div>
+                    <div class="flex-row-div hidden" id="tel">
+                        <label for="tel">Телефон</label>
+                        <input  class="divnew" type="tel" name="tel" >
+                    </div>
+                    <div>Ваш вопрос:</div>
+                    <div>
+                    <textarea cols="20"></textarea>
+                    </div>
+                </div>
+                <div>
+                    Пол<br>
+                    <label for="gender_m"><input type="radio" id="gender_m" name="gender" value="m" checked>Мужской</label><br>
+                    <label for="gender_w"><input type="radio" id="gender_w" name="gender" value="w" checked>Женский</label><br>
+                </div>
+                <div>
+                    <select name="city">Укажите город
+                        <option value="Dubna">Дубна</option>
+                        <option value="Moskva">Москва</option>
+                        <option value="Ufa">Уфа</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <button id="render_birthday">Укажите дату рождения</button>
+                    <br>
+                    <div id="form_birthday"></div>
+                </div>
+                <div>
+                    <label for="mailing">Подписаться на рассылку</label>
+                    <input type="checkbox" id="mailing" name="mailing" value="mailing_true" checked>                
+                </div>
+            <input type="submit" value="отправить вопрос"  class="divnew margint">
+        </form></div>     
+      </div>
+    </main>  
+    <footer class="flex-row-div">
+        <div>
+            <a href=""><img src="../gif/vk.jpg" width="50px" height="50px" alt=""></a>
+            <a href=""><img src="../gif/git.jpg" width="50px" height="50px" alt=""></a>
+            <a href=""><img src="../gif/ins.jpg" width="50px" height="50px" alt=""></a>
+        </div>
+        <p>Cайт разработан ФИ, Copyright © 2021</p>
+        </footer> 
+</body>
+</html>
